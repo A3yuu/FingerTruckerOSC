@@ -1,4 +1,4 @@
-# FingerTruckerOSC
+# FingerTrackerOSC
 
 VRChatのOSCで指を動かせるようになる。
 
@@ -32,7 +32,7 @@ SteamVR Unity Plugin - v2.7.3
 
 OscCore_v1_1_0
 
-## Download Binary
+## Donate
 
 https://a3s.booth.pm/items/3689147
 
