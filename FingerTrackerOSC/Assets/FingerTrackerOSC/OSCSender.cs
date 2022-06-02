@@ -20,6 +20,10 @@ public class OSCSender : MonoBehaviour
         }
         client = new OscClient(ip, port);
     }
+     private void Update()
+    {
+        Thread.Sleep(16);
+    }
     void FixedUpdate()
     {
         c++;
