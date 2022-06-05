@@ -11,7 +11,6 @@ public class FingerTracking : MonoBehaviour
     [SerializeField]
     private SteamVR_Action_Skeleton SkeletonActionRight;
     public float[] data = new float[40];
-    public bool isTracked = false;
 
     int[] FingerNameStretched_SteamVR =
     {
