@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1506855854, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Hand_Parameter_256bit_Alt
+  m_EditorClassIdentifier: 
+  parameters:
+  - name: VRCEmote
+    valueType: 0
+    saved: 1
+    defaultValue: 0
+  - name: LHThumb1
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHThumb2
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHIndex1
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHIndex2
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHMiddle1
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHMiddle2
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHRing1
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHRing2
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHLittle1
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHLittle2
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHThumb1
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHThumb2
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHIndex1
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHIndex2
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHRing1
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHRing2
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHMiddle1
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHMiddle2
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHLittle1
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHLittle2
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHThumbS
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHIndexS
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHMiddleS
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHRingS
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: LHLittleS
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHThumbS
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHIndexS
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHMiddleS
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHRingS
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RHLittleS
+    valueType: 1
+    saved: 1
+    defaultValue: 0
