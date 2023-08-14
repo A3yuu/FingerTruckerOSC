@@ -32,7 +32,7 @@ public class FingerTracking : MonoBehaviour
     };
     int[] FingerNameSpread_SteamVR =
     {
-        SteamVR_Skeleton_JointIndexes.thumbMiddle,
+        SteamVR_Skeleton_JointIndexes.thumbProximal,
         SteamVR_Skeleton_JointIndexes.indexProximal,
         SteamVR_Skeleton_JointIndexes.middleProximal,
         SteamVR_Skeleton_JointIndexes.ringProximal,
@@ -86,7 +86,7 @@ public class FingerTracking : MonoBehaviour
     };
     int[] UnityMuscleDegreeStretched =
         {
-        110, //Left Thumb 1 Stretched
+        60, //Left Thumb 1 Stretched
         20, //Left Thumb 2 Stretched
         20, //Left Thumb 3 Stretched
         40, //Left Index 1 Stretched
@@ -101,7 +101,7 @@ public class FingerTracking : MonoBehaviour
         40, //Left Little 1 Stretched
         40, //Left Little 2 Stretched
         40, //Left Little 3 Stretched
-        -70, //Right Thumb 1 Stretched
+        -120, //Right Thumb 1 Stretched
         20, //Right Thumb 2 Stretched
         20, //Right Thumb 3 Stretched
         40, //Right Index 1 Stretched
@@ -119,12 +119,12 @@ public class FingerTracking : MonoBehaviour
     };
     int[] UnityMuscleDegreeSpread =
         {
-        0, //Left Thumb Spread
+        150, //Left Thumb Spread
         0, //Left Index Spread
         0, //Left Middle Spread
         -10, //Left Ring Spread
         0, //Left Little Spread
-        0, //Right Thumb Spread
+        -30, //Right Thumb Spread
         0, //Right Index Spread
         0, //Right Middle Spread
         -10, //Right Ring Spread
@@ -155,7 +155,10 @@ public class FingerTracking : MonoBehaviour
         Quaternion[] boneRotationsRight = SkeletonActionRight.GetBoneRotations(true);
 
         float[] eulerAnglesStretched = new float[30];
-        for (int i = 0; i < 15; i++)
+        
+        eulerAnglesStretched[0] = -Quaternion.Angle(boneRotationsLeft[FingerNameStretched_SteamVR[0]], Quaternion.Euler(0, 0, boneRotationsLeft[FingerNameStretched_SteamVR[0]].eulerAngles.z));
+        eulerAnglesStretched[15] = Quaternion.Angle(boneRotationsRight[FingerNameStretched_SteamVR[0]], Quaternion.Euler(0, 0, boneRotationsRight[FingerNameStretched_SteamVR[0]].eulerAngles.z));
+        for (int i = 1; i < 15; i++)
         {
             eulerAnglesStretched[i] = boneRotationsLeft[FingerNameStretched_SteamVR[i]].eulerAngles.z;
             eulerAnglesStretched[i + 15] = boneRotationsRight[FingerNameStretched_SteamVR[i]].eulerAngles.z;
@@ -170,8 +173,8 @@ public class FingerTracking : MonoBehaviour
         }
 
         float[] eulerAnglesSpread = new float[10];
-        eulerAnglesSpread[0] = boneRotationsLeft[FingerNameSpread_SteamVR[0]].eulerAngles.y;
-        eulerAnglesSpread[5] = boneRotationsRight[FingerNameSpread_SteamVR[0]].eulerAngles.y;
+        eulerAnglesSpread[0] = boneRotationsLeft[FingerNameSpread_SteamVR[0]].eulerAngles.z;
+        eulerAnglesSpread[5] = boneRotationsRight[FingerNameSpread_SteamVR[0]].eulerAngles.z;
         for (int i = 1; i < 3; i++)
         {
             eulerAnglesSpread[i] = -boneRotationsLeft[FingerNameSpread_SteamVR[i]].eulerAngles.y;
